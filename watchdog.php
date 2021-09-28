@@ -31,12 +31,12 @@
 			echo "Reinicio de emisión. Fecha y hora:  " . date(DATE_RFC2822) . "\n";	
   		  exec('sudo pkill ffmpeg');
 		//AGREGADO
-			$pid2 = exec("pidof ffmpeg");
+/*			$pid2 = exec("pidof ffmpeg");
 			while(!empty($pid2)){
 			exec ("sudo pkill ffmpeg");
 		sleep (1);
 			}
-                       
+  */                     
 //FIN AGREGADO
                    sleep (1);
                    exec($comando, $errors);
