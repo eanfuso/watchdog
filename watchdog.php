@@ -30,6 +30,14 @@
         if ($total >= 1){
 			echo "Reinicio de emisión. Fecha y hora:  " . date(DATE_RFC2822) . "\n";	
   		  exec('sudo pkill ffmpeg');
+			sleep (1);
+		exec('sudo pkill ffmpeg');
+		  sleep (1);
+                exec('sudo pkill ffmpeg');	
+
+
+
+
 		//AGREGADO
 /*			$pid2 = exec("pidof ffmpeg");
 			while(!empty($pid2)){
